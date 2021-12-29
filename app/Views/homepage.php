@@ -57,7 +57,7 @@
                          onmouseover="this.style.background='WhiteSmoke';"
                          onmouseout="this.style.background='White';" 
                          class="col mb-5 h-100">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi <?php echo $feature['icon']; ?>"></i></div>
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="<?php echo $feature['icon']; ?>"></i></div>
                         <h2 class="h5"><?php echo $feature['title']; ?></h2>
                         <p class="mb-0"><?php echo $feature['text']; ?></p>
                     </div>

@@ -34,3 +34,19 @@
         </div>
     </div>
 </nav>
+<!-- Social Networks
+<div class="py-1 bg-success">
+    <div class="container px-5">
+        <div class="row gx-5">
+            <div class="col-lg-12">
+                    <div class="align-items-right">
+                        <i class="fa-brands fa-twitter"></i>&nbsp;
+                        <i class="fa-brands fa-facebook"></i>&nbsp;
+                        <i class="fa-brands fa-youtube></i>&nbsp;
+                        <i class="fa-brands fa-slack"></i>&nbsp;
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div> -->

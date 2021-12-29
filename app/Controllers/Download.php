@@ -46,16 +46,16 @@ class Download extends Controller
                 || !strcmp($platformVersion,"Debian")
                 || !strcmp($platformVersion,"GNU/Linux")
                 || !strcmp($platformVersion,"Unknown Unix OS")) {
-            $osVersion = "Unix";
+            $osVersion = "Linux";
             $button = [ 
-                'name' => "$osVersion (v$latestVersion)",
+                'name' => "$osVersion (Select from Linux builds below)",
                 'link' => ""
             ];
             $downloads[] = $button;
         } else {
             $osVersion = "";
             $button = [ 
-                'name' => "Unknown - Select From Below",
+                'name' => "Unknown (Select from builds Below)",
                 'link' => ""
             ];
             $downloads[] = $button;
@@ -64,8 +64,6 @@ class Download extends Controller
         $data['platformVersion'] = $platformVersion;
         $data['platformType'] = $osVersion;
         $data['downloads'] = $downloads;
-
-
 
         echo view('templates/header', $data);
         echo view('templates/navigation', $data);

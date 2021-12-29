@@ -85,6 +85,12 @@ class News extends BaseController
 
         echo view('news/_footer');   
 
+        $appConfig = config('App');
+        // https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/web-intent
+        $data['twitter'] = "https://twitter.com/intent/tweet?".urlencode("text=".$mmexConfig->siteName.": ".$thisPost['title'].
+                            "&url=".$appConfig->baseURL."news/view/".$thisPost['slug']);
+        echo view('news/_social', $data);          
+
         echo view('templates/footer', $data);
     }
 }

@@ -7,9 +7,9 @@
         <meta name="author" content="" />
         <title><?php echo $siteName ?></title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <!-- Fomt awesome icons-->
+        <script src="https://kit.fontawesome.com/e121a0f495.js" crossorigin="anonymous"></script>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/css/styles.css" rel="stylesheet" />
     </head>
