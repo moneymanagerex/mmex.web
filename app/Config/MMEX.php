@@ -17,15 +17,22 @@ class MMEX extends BaseConfig
         'mac' => "MacOS (Universal)",
         'win64port' => "Windows (64-bit) Portable",
         'win32port' => "Windows (32-bit) Portable",
-        'linuxgroovy' => "Linux Ubuntu 20.10 (64-bit)",
-        'linuxbionic' => "Linux Ubuntu 18.04 (64-bit)",
-        'linuxxenial' => "Linux Ubuntu 16.04 (64-bit)",
-        'linuxtara' => "Linix Mint 19 (64-bit)",
-        'linuxtessa' => "Linix Mint 19.1 (64-bit)",
-        'linuxsylvia' => "Linix Mint 18.3 (64-bit)",
-        'linuxfedora' => "Linux Fedora (32/64-bit)"
+        'linuxrhel8' => "Red Hat Enterprise Linux 8",
+        'linuxbuster' => "Debian 10 (64-bit)",
+        'linuxstretch' => "Debian 9 (64-bit)",
+        'linuxjessie' => "Debian 8 (64-bit)",
+        'linuxgroovy' => "Ubuntu 20.10 (64-bit)",
+        'linuxfocal' => "Ubuntu 20.04 (64-bit)",
+        'linuxbionic' => "Ubuntu 18.04 (64-bit)",
+        'linuxxenial' => "Ubuntu 16.04 (64-bit)",
+        'linuxtara' => "Linux Mint 19 (64-bit)",
+        'linuxtessa' => "Linux Mint 19.1 (64-bit)",
+        'linuxsylvia' => "Linux Mint 18.3 (64-bit)",
+        'linuxfedora' => "Linux Fedora (32/64-bit)",
+        'linuxsus42' => "OpenSUSE 42 (32/64-bit)"
     ];
 
+    // Empty build URLS imply that the Build controller can calculate these
     public $releaseList = [
         [   'version' => "1.5.11",
             'date' => "7th December 2021",
@@ -116,7 +123,7 @@ class MMEX extends BaseConfig
                 'win32port' => "",
                 'win64port' => "",
                 'linuxbionic' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.3/mmex_1.5.3-1.bionic_amd64.deb",
-                'linuxmint' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.3/mmex_1.5.3-1.tara_amd64.deb",
+                'linuxtara' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.3/mmex_1.5.3-1.tara_amd64.deb",
                 'linuxtessa' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.3/mmex_1.5.3-1.tessa_amd64.deb",
                 'linuxfedora' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.3/mmex-1.5.3-1.fc30.x86_64.rpm"
             ]
@@ -134,7 +141,65 @@ class MMEX extends BaseConfig
                 'linuxxenial' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.2/mmex_1.5.2-1.xenial_amd64.deb",
                 'linuxfedora' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.2/mmex-1.5.2-1.fc30.x86_64.rpm"
             ]
-        ]
+        ],
+        [   'version' => "1.5.1",
+            'date' => "24th April 2021",
+            'contents' => [
+                'mac' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.1/mmex-1.5.1-macos.dmg",
+                'win32' => "",
+                'win64' => "",
+                'win32port' => "",
+                'win64port' => "",
+                'linuxbionic' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.1/mmex_1.5.1-1.bionic_amd64.deb",
+                'linuxbuster' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.1/mmex_1.5.1-1.buster_amd64.deb",
+                'linuxfocal' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.1/mmex_1.5.1-1.focal_amd64.deb",
+                'linuxgroovy' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.1/mmex_1.5.1-1.groovy_amd64.deb",
+                'linuxtara' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.1/mmex_1.5.1-1.tara_amd64.deb",
+                'linuxtessa' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.1/mmex_1.5.1-1.tessa_amd64.deb",
+                'linuxfedora' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.1/mmex-1.5.1-1.fc30.x86_64.rpm",
+                'linuxrhel8' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.1/mmex-1.5.1-1.el8.x86_64.rpm"
+            ]
+        ],
+        [   'version' => "1.5.0",
+            'date' => "11th April 2021",
+            'contents' => [
+                'mac' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.0/mmex.v1.5.0-macOS.2020.04.12.dmg",
+                'win32' => "",
+                'win64' => "",
+                'win32port' => "",
+                'win64port' => "",
+                'linuxbionic' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.0/mmex_1.5.0-1.bionic_amd64.deb",
+                'linuxbuster' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.0/mmex_1.5.0-1.buster_amd64.deb",
+                'linuxfocal' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.0/mmex_1.5.0-1.focal_amd64.deb",
+                'linuxgroovy' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.0/mmex_1.5.0-1.groovy_amd64.deb",
+                'linuxsylvia' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.0/mmex_1.5.0-1.sylvia_amd64.deb",
+                'linuxtara' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.0/mmex_1.5.0-1.tara_amd64.deb",
+                'linuxtessa' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.0/mmex_1.5.0-1.tessa_amd64.deb",
+                'linuxxenial' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.0/mmex_1.5.0-1.xenial_amd64.deb",
+                'linuxfedora' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.0/mmex-1.5.0-1.fc30.x86_64.rpm",
+                'linuxrhel8' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.0/mmex-1.5.0-1.el8.x86_64.rpm"
+            ]
+        ],
+        [   'version' => "1.3.6",
+            'date' => "24th December 2020",
+            'contents' => [
+                'mac' => "",
+                'win32' => "",
+                'win64' => "",
+                'win32port' => "",
+                'win64port' => "",
+                'linuxbionic' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.3.6/mmex_1.3.6-1.bionic_amd64.deb",
+                'linuxjessie' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.3.6/mmex_1.3.6-1.jessie_amd64.deb",
+                'linuxstretch' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.3.6/mmex_1.3.6-1.stretch_amd64.deb",
+                'linuxsuse42' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.3.6/mmex-1.3.6-1.opensuse42.2-x86_64.rpm",
+                'linuxsylvia' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.3.6/mmex_1.3.6-1.sylvia_amd64.deb",
+                'linuxtara' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.3.6/mmex_1.3.6-1.tara_amd64.deb",
+                'linuxtessa' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.3.6/mmex_1.3.6-1.tessa_amd64.deb",
+                'linuxxenial' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.3.6/mmex_1.3.6-1.xenial_amd64.deb",
+                'linuxfedora' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.3.6/mmex-1.3.6-1.fc30.x86_64.rpm",
+                'linuxrhel8' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.3.6/mmex-1.3.6-1.el8.x86_64.rpm"
+            ]
+         ]
     ];
 
     public $featureList = [

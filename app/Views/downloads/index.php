@@ -1,14 +1,14 @@
-<!-- Hero-->
+<!-- Recommended Build-->
 <header class="bg-dark py-5">
     <div class="container px-5">
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="text-center my-1">
-                    <h1 class="fw-bolder text-white mb-3">Download the latest recommended version</h1>
+                    <h1 class="fw-bolder text-white mb-3">Download the latest recommended build</h1>
                     <p class="lead fw-normal text-muted mb-4">Either download the latest recommended version for your platform or select from the available versions below.</p>
                     <div>
 <?php foreach($downloads as $download) { ?>
-                        <a class="btn btn-primary btn-lg" href="<?php echo $download['link'] ?>"><?php echo $download['name'] ?></a>
+                        <a class="btn btn-primary btn-lg" href="<?php echo $download['link'] ?>"><i class="fa-solid fa-download"></i>&nbsp;<?php echo $download['name'] ?></a>
 <?php } ?>
                         <a class="btn btn-outline-light btn-lg" href="https://sourceforge.net/projects/moneymanagerex/files/v<?php echo $latestVersion ?>/">Alternate download</a>
                     </div>
@@ -25,6 +25,7 @@
     </div>
 </header>
 
+<!-- Full stable build list -->
 <section class="py-3">
     <div class="container px-1">
         <div class="row">
@@ -40,10 +41,10 @@
                                 <a href="https://github.com/moneymanagerex/moneymanagerex/releases/tag/v<?php echo $release['version'] ?>">
                                     Release notes</a></h5>
                             <div class="card-body">
-                            <p class="text-muted"><?php echo $release['date'] ?></p>
+                                <p class="text-muted"><?php echo $release['date'] ?></p>
     <?php foreach($releaseNames as $releaseID => $releaseName) { ?>
         <?php if (array_key_exists($releaseID, $release['contents'])) { ?>
-                                <a href="<?php echo $release['contents'][$releaseID] ?>" class="btn btn-outline-primary btn-sm">
+                                <a href="<?php echo $release['contents'][$releaseID] ?>" class="btn btn-outline-primary btn-sm mb-1">
                                     <?php echo $releaseName ?></a>
                                 
         <?php } ?>
@@ -58,6 +59,7 @@
     </div>
 </section>
 
+<!-- Upgrade warning -->
 <section class="py-3">
     <div class="container px-1">
         <div class="row">
@@ -72,6 +74,7 @@
     </div>
 </section>
 
+<!-- Developmnet builds -->
 <section class="py-3">
     <div class="container px-1">
         <div class="row">
