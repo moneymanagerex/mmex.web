@@ -9,9 +9,9 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <!-- Font awesome icons-->
-        <link href="/fa-6.0.0-beta3-web/css/fontawesome.min.css" rel="stylesheet">
-        <link href="/fa-6.0.0-beta3-web/css/brands.min.css" rel="stylesheet">
-        <link href="/fa-6.0.0-beta3-web/css/solid.min.css" rel="stylesheet">
+        <link href="/fa/css/fontawesome.min.css" rel="stylesheet">
+        <link href="/fa/css/brands.min.css" rel="stylesheet">
+        <link href="/fa/css/solid.min.css" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/css/styles.css" rel="stylesheet" />
     </head>
