@@ -8,7 +8,7 @@
                     <p class="lead fw-normal text-muted mb-4">Either download the latest recommended version for your platform or select from the available versions below.</p>
                     <div>
 <?php foreach($downloads as $download) { ?>
-                        <a class="btn btn-primary btn-lg" href="<?php echo $download['link'] ?>"><i class="fa-solid fa-download"></i>&nbsp;<?php echo $download['name'] ?></a>
+                        <a class="btn btn-primary btn-lg" href="<?php echo $download['link'] ?>"><i class="fas fa-download"></i>&nbsp;<?php echo $download['name'] ?></a>
 <?php } ?>
                         <a class="btn btn-outline-light btn-lg" href="https://sourceforge.net/projects/moneymanagerex/files/v<?php echo $latestVersion ?>/">Alternate download</a>
                     </div>
@@ -80,12 +80,12 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="fw-bolder mb-4">Beta/Development Builds</h2>
-                <p><i class="fa-solid fa-triangle-exclamation text-danger"></i>&nbsp;Use unstable builds for early testing before official release. 
+                <p><i class="fas fa-triangle-exclamation text-danger"></i>&nbsp;Use unstable builds for early testing before official release. 
                 Avoid everyday use unless you need a specific feature/fix or are willing to risk using the latest software.</p>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card">
-                            <h5 class="card-header"><i class="fa-brands fa-windows"></i>&nbsp; Windows</h5>
+                            <h5 class="card-header"><i class="fab fa-windows"></i>&nbsp; Windows</h5>
                             <div class="card-body">
                                 <a class="btn btn-primary btn-sm" href="https://www.moneymanagerex.org/component/weblinks/weblink/30-download/35-download-unstable-windows?Itemid=435&task=weblink.go">Windows Builds</a>
                                 <p class="card-text">Under "Job name," choose x64 or Win32 > Artifacts > Portable (version recommended for unstable builds).</p>
@@ -94,7 +94,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <h5 class="card-header"><i class="fa-brands fa-apple"></i>&nbsp; MacOS</h5>
+                            <h5 class="card-header"><i class="fab fa-apple"></i>&nbsp; MacOS</h5>
                             <div class="card-body">
                                 <a class="btn btn-primary btn-sm" href="https://mmex.ipx.co.uk">MacOS Builds</a>
                                 <p class="card-text">Repository of latest signed MacOS Universal builds</p>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <h5 class="card-header"><i class="fa-brands fa-linux"></i>&nbsp; Linux</h5>
+                            <h5 class="card-header"><i class="fab fa-linux"></i>&nbsp; Linux</h5>
                             <div class="card-body">
                                 <a href="https://aur.archlinux.org/packages/moneymanagerex-git/" class="btn btn-primary btn-sm">Arch User Repo</a>
                                 <p class="card-text">Arch Linux (AUR packages), usage: <code>paru -S moneymanagerex-git</code></p>

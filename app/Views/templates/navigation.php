@@ -40,11 +40,11 @@
         <div class="row gx-5">
             <div class="col-lg-12">
                     <div class="align-items-right">
-                        <i class="fa-brands fa-twitter"></i>&nbsp;
-                        <i class="fa-brands fa-facebook"></i>&nbsp;
-                        <i class="fa-brands fa-youtube></i>&nbsp;
-                        <i class="fa-brands fa-slack"></i>&nbsp;
-                        <i class="fa-brands fa-github"></i>
+                        <i class="fab fa-twitter"></i>&nbsp;
+                        <i class="fab fa-facebook"></i>&nbsp;
+                        <i class="fab fa-youtube></i>&nbsp;
+                        <i class="fab fa-slack"></i>&nbsp;
+                        <i class="fab fa-github"></i>
                     </div>
             </div>
         </div>
