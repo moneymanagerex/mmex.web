@@ -12,7 +12,6 @@
         <link href="/fa-6.0.0-beta3-web/css/fontawesome.min.css" rel="stylesheet">
         <link href="/fa-6.0.0-beta3-web/css/brands.min.css" rel="stylesheet">
         <link href="/fa-6.0.0-beta3-web/css/solid.min.css" rel="stylesheet">
-        <!--<script src="https://kit.fontawesome.com/e121a0f495.js" crossorigin="anonymous"></script>-->
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/css/styles.css" rel="stylesheet" />
     </head>

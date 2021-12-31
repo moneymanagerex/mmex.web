@@ -29,7 +29,14 @@
                         <li><a class="dropdown-item" href="donate">Donate</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                        <li><a class="dropdown-item" href="/about/contributors">Contributors</a></li>
+                        <li><a class="dropdown-item" href="/about/license">License</a></li>
+                        <li><a class="dropdown-item" href="/about/privacy">Privacy</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
