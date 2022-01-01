@@ -4,13 +4,13 @@
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="text-center my-1">
-                    <h1 class="fw-bolder text-white mb-3">Download the latest recommended build</h1>
+                    <h1 class="fw-bolder text-white mb-3">Download the latest v<?php echo $latestVersion ?> recommended build</h1>
                     <p class="lead fw-normal text-muted mb-4">Either download the latest recommended version for your platform or select from the available versions below.</p>
                     <div>
 <?php foreach($downloads as $download) { ?>
-                        <a class="btn btn-primary btn-lg" href="<?php echo $download['link'] ?>"><i class="fas fa-download"></i>&nbsp;<?php echo $download['name'] ?></a>
+                        <a class="btn btn-primary btn-lg mb-1" href="<?php echo $download['link'] ?>"><i class="fas fa-download"></i>&nbsp;<?php echo $download['name'] ?></a>
 <?php } ?>
-                        <a class="btn btn-outline-light btn-lg" href="https://sourceforge.net/projects/moneymanagerex/files/v<?php echo $latestVersion ?>/">Alternate download</a>
+                        <a class="btn btn-outline-light btn-lg mb-1" href="https://sourceforge.net/projects/moneymanagerex/files/v<?php echo $latestVersion ?>/">Alternate download</a>
                     </div>
                 </div>
             </div>
