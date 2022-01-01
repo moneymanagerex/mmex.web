@@ -87,7 +87,7 @@
 
 --------------------
 
-## <i class="fas fa-book-open-reader"></i> User Manual
+## <i class="fas fa-book-open"></i> User Manual
 - English
     - Stefano
     - Tina P, Terry Wick
