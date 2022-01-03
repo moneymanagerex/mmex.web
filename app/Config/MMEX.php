@@ -11,6 +11,8 @@ class MMEX extends BaseConfig
     public $siteSummary = "Open-source, cross-platform, software that helps you organize your finances and keep track of where, when and to who the money goes. It is also a great tool to get a bird's eye view of your financial worth.";
     public $siteCopyright = "&copy; 2014 - 2022 - Money Manager EX";
 
+    public $forumRSS = "https://forum.moneymanagerex.org/app.php/feed";
+
     public $releaseNames = [
         'win64' => "Windows (64-bit)",
         'win32' => "Windows (32-bit)",

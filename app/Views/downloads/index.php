@@ -33,6 +33,7 @@
                 <h2 class="fw-bolder mb-4">Full stable release downloads</h2>
                 <p>Here is a selection of the most recent release if you don't want to the take the current version or the 
                     current version is not yet available for you platform</p>
+                <p class="text-muted">For the latest development/Beta builds click <a href="#DevBuilds">here</a>.</p>
                 <div class="row row-cols-1 row-cols-md-4 g-4">
 <?php foreach($releaseList as $release) { ?>
                     <div class="col">
@@ -74,12 +75,12 @@
     </div>
 </section>
 
-<!-- Developmnet builds -->
+<!-- Development builds -->
 <section class="py-3">
     <div class="container px-1">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="fw-bolder mb-4">Beta/Development Builds</h2>
+                <h2 id="DevBuilds" class="fw-bolder mb-4">Beta/Development Builds</h2>
                 <p><i class="fas fa-triangle-exclamation text-danger"></i>&nbsp;Use unstable builds for early testing before official release. 
                 Avoid everyday use unless you need a specific feature/fix or are willing to risk using the latest software.</p>
                 <div class="row row-cols-1 row-cols-md-3 g-4">

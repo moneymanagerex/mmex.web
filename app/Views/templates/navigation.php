@@ -2,6 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <div class="container px-5">
         <a class="navbar-brand" href="/"><?php echo $siteName; ?></a>
+        <!-- Menus -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -33,6 +34,7 @@
                     <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                         <li><a class="dropdown-item" href="/about/contributors">Contributors</a></li>
+                        <li><a class="dropdown-item" href="/about/press">Press Reviews</a></li>
                         <li><a class="dropdown-item" href="/about/license">License</a></li>
                         <li><a class="dropdown-item" href="/about/privacy">Privacy</a></li>
                     </ul>
@@ -42,18 +44,11 @@
     </div>
 </nav>
 <!-- Social Networks
-<div class="py-1 bg-success">
-    <div class="container px-5">
-        <div class="row gx-5">
-            <div class="col-lg-12">
-                    <div class="align-items-right">
-                        <i class="fab fa-twitter"></i>&nbsp;
-                        <i class="fab fa-facebook"></i>&nbsp;
-                        <i class="fab fa-youtube></i>&nbsp;
-                        <i class="fab fa-slack"></i>&nbsp;
-                        <i class="fab fa-github"></i>
-                    </div>
-            </div>
-        </div>
-    </div>
-</div> -->
+<div>
+    <a class="text-white" href="https://twitter.com/MoneyManagerEx">[&nbsp;<i class="fab fa-twitter"></i></a>&nbsp;
+    <a class="text-white" href="https://www.facebook.com/MoneyManagerEx"><i class="fab fa-facebook"></i></a>&nbsp;
+    <a class="text-white" href="https://www.youtube.com/user/moneymanagerex"><i class="fab fa-youtube"></i></a>&nbsp;
+    <a class="text-white" href="http://slack.moneymanagerex.org/"><i class="fab fa-slack"></i></a>&nbsp;
+    <a class="text-white" href="https://github.com/moneymanagerex"><i class="fab fa-github">&nbsp;</i>&nbsp;]</a>
+</div>
+-->

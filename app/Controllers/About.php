@@ -50,11 +50,20 @@ class About extends BaseController
         );
     }
 
+    
     public function license()
     { 
         $this->displayMD('<i class="fas fa-id-badge"></i>&nbsp; License',
                     "The following license conditions apply to the software",
                     "license.md"
+        );
+    }
+
+    public function press()
+    { 
+        $this->displayMD('<i class="fas fa-award"></i></i>&nbsp; Press Reviews',
+                    "Reviews of the software across the Internet press",
+                    "press.md"
         );
     }
 }

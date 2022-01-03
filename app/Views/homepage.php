@@ -68,7 +68,42 @@
     </div>
 </section>
 
-<!-- News preview section-->
+<!-- Forum RSS -->
+<section class="py-1">
+    <div class="container px-1 my-1">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <h2 class="fw-bolder">MMEX Discussion Forum </h2>
+                    <p class="lead fw-normal text-muted mb-5">Latest Posts on the offical discussion forum</p>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-5">
+<?php foreach($forumFeed as $forumPost) { ?>
+            <div class="col-lg-3 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2"></div>
+                        <a href="<?php echo $forumPost['url'] ?>"><h6 class="card-title mb-3"><?php echo $forumPost['title'] ?></h6></a>
+                    </div>
+                    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                        <div class="d-flex align-items-end justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <div class="small">
+                                    <div class="text-muted"><?php echo $forumPost['date'] ?></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<?php } ?>
+        </div>
+    </div>
+</section>
+
+<!-- News preview section -->
 <section class="py-1">
     <div class="container px-1 my-1">
         <div class="row gx-5 justify-content-center">
