@@ -120,8 +120,8 @@
                 <div class="card h-100 shadow border-0">
                     <div class="card-body p-4">
                         <div class="badge bg-primary bg-gradient rounded-pill mb-2"></div>
-                        <h5 class="card-title mb-3"><?php echo $newsItem['title'] ?></h5>
-                        <p class="card-text mb-0"><?php echo $newsItem['abstract'] ?></p>
+                        <a href="/news/view/<?php echo $newsItem['slug'] ?>"><h5 class="card-title mb-3"><i class="<?php echo $newsItem['icon'] ?>"></i>&nbsp;<?php echo $newsItem['title'] ?></h5>
+</a>                        <p class="card-text mb-0"><?php echo $newsItem['abstract'] ?></p>
                     </div>
                     <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                         <div class="d-flex align-items-end justify-content-between">
@@ -132,7 +132,6 @@
                             </div>
                         </div>
                     </div>
-                    <a href="/news/view/<?php echo $newsItem['slug'] ?>" class="btn btn-primary">Read</a>
                 </div>
             </div>
 <?php } ?>

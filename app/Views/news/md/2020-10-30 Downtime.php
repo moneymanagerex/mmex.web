@@ -1,6 +1,7 @@
 <?php
  return array(
     'title' => 'MMEX homesite down for a few hours',
+    'icon' => 'fas fa-frown',
     'date' => '30th October 2020',
     'slug' => 'downtime',
     'image' => 'MMEX_Logo_Medium.png',

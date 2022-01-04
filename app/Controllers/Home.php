@@ -6,17 +6,9 @@ class Home extends BaseController
 {
     public function index()
     {
-        $data['title'] = "Home Page";
+        $this->showHeader("Home Page");
 
         $mmexConfig = config('MMEX');
-        $data['siteName'] = $mmexConfig->siteName;
-        $data['siteHeadline'] = $mmexConfig->siteHeadline;
-        $data['siteSummary'] = $mmexConfig->siteSummary;
-        $data['siteCopyright'] = $mmexConfig->siteCopyright;
-
-        echo view('templates/header', $data);
-        echo view('templates/navigation', $data);
-
         $data['featureList'] = $mmexConfig->featureList;
 
         // Grab the last 6 forum posts
@@ -54,7 +46,7 @@ class Home extends BaseController
         $data['newsPosts'] = $postList;
 
         echo view('homepage', $data);
-        
-        echo view('templates/footer', $data);
+
+        $this->showFooter();
     }
 }

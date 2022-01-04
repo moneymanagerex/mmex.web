@@ -8,18 +8,10 @@ class About extends BaseController
 {
     function displayMD($title, $description, $markdown)
     {
+        $this->showHeader($title);
+
         $mdPath = APPPATH.'Views/about/md/'.$markdown;
-        $data['title'] = $title;
         $data['description'] = $description;
-
-        $mmexConfig = config('MMEX');
-        $data['siteName'] = $mmexConfig->siteName;
-        $data['siteHeadline'] = $mmexConfig->siteHeadline;
-        $data['siteSummary'] = $mmexConfig->siteSummary;
-        $data['siteCopyright'] = $mmexConfig->siteCopyright;
-
-        echo view('templates/header', $data);
-        echo view('templates/navigation', $data);
 
         echo view('about/_header', $data);     
         // Grab and process the markdown
@@ -27,7 +19,7 @@ class About extends BaseController
         echo Markdown::defaultTransform($mdData);  
         echo view('about/_footer', $data);          
 
-        echo view('templates/footer', $data);
+        $this->showFooter();
     }
 
     public function index()

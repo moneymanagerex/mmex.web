@@ -8,18 +8,11 @@ class News extends BaseController
 {
     public function index()
     {
+        $this->showHeader("News");
+
         $mdPath = APPPATH.'Views/news/md/';
-        
-        $data['title'] = "News";
 
         $mmexConfig = config('MMEX');
-        $data['siteName'] = $mmexConfig->siteName;
-        $data['siteHeadline'] = $mmexConfig->siteHeadline;
-        $data['siteSummary'] = $mmexConfig->siteSummary;
-        $data['siteCopyright'] = $mmexConfig->siteCopyright;
-
-        echo view('templates/header', $data);
-        echo view('templates/navigation', $data);
 
         // Grab the list of posts
         helper('filesystem');
@@ -34,7 +27,7 @@ class News extends BaseController
         $data['newsPosts'] = $postList;
         echo view('news/index', $data);
 
-        echo view('templates/footer', $data);
+        $this->showFooter();
     }
 
     public function view($newsItem)
@@ -62,17 +55,9 @@ class News extends BaseController
             throw new \CodeIgniter\Exceptions\PageNotFoundException($newsItem);
         }   
 
-        $data['title'] = "News: ". ucfirst($newsItem);
+        $this->showHeader("News: ". ucfirst($newsItem));
 
         $mmexConfig = config('MMEX');
-        $data['siteName'] = $mmexConfig->siteName;
-        $data['siteHeadline'] = $mmexConfig->siteHeadline;
-        $data['siteSummary'] = $mmexConfig->siteSummary;
-        $data['siteCopyright'] = $mmexConfig->siteCopyright;
-
-        echo view('templates/header', $data);
-        echo view('templates/navigation', $data);
-
 
         $data['newsPosts'] = $postList;
         $data['thisPost'] = $thisPost;
@@ -91,6 +76,6 @@ class News extends BaseController
                             "&url=".$appConfig->baseURL."news/view/".$thisPost['slug']);
         echo view('news/_social', $data);          
 
-        echo view('templates/footer', $data);
+        $this->showFooter();
     }
 }

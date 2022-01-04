@@ -2,19 +2,13 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
-
-class Download extends Controller
+class Download extends BaseController
 {
     public function index()
     {
-        $data['title'] = "Downloads";
+        $this->showHeader("Downloads");
 
         $mmexConfig = config('MMEX');
-        $data['siteName'] = $mmexConfig->siteName;
-        $data['siteHeadline'] = $mmexConfig->siteHeadline;
-        $data['siteSummary'] = $mmexConfig->siteSummary;
-        $data['siteCopyright'] = $mmexConfig->siteCopyright;
 
         // Fill-in standard URLs
         $releaseList = $mmexConfig->releaseList;
@@ -95,10 +89,9 @@ class Download extends Controller
         $data['releaseList'] = $releaseList;
         $data['latestVersion'] = $latestRelease['version'];
 
-        echo view('templates/header', $data);
-        echo view('templates/navigation', $data);
         echo view('downloads/index', $data);
-        echo view('templates/footer', $data);
+
+        $this->showHeader("Downloads");
     }
 
 }

@@ -16,7 +16,7 @@
 <?php foreach($newsPosts as $newsItem) { ?>       
         <div class="col">
             <div class="card">
-            <h5 class="card-header"><?php echo $newsItem['title'] ?></h5>
+            <h5 class="card-header"><i class="<?php echo $newsItem['icon'] ?>"></i>&nbsp;<?php echo $newsItem['title'] ?></h5>
             <div class="card-body">
                 <p class="card-text"><?php echo $newsItem['abstract'] ?></p>
                 <p class="card-text"><small class="text-muted">Dated: <?php echo $newsItem['date'] ?></small></p>

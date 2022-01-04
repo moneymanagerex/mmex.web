@@ -15,21 +15,15 @@ class Features extends BaseController
     {
         $mdFile = APPPATH.'Views/features/md/'.$page.'.md';
 
-        if (! is_file($mdFile)) {
+        if (! is_file($mdFile)) 
+        {
             // Whoops, we don't have a page for that!
             throw new \CodeIgniter\Exceptions\PageNotFoundException($page);
         }
-
-        $data['title'] = "Features: ". ucfirst($page);
+        
+        $this->showHeader("Features: ". ucfirst($page));
 
         $mmexConfig = config('MMEX');
-        $data['siteName'] = $mmexConfig->siteName;
-        $data['siteHeadline'] = $mmexConfig->siteHeadline;
-        $data['siteSummary'] = $mmexConfig->siteSummary;
-        $data['siteCopyright'] = $mmexConfig->siteCopyright;
-
-        echo view('templates/header', $data);
-        echo view('templates/navigation', $data);
 
         // Find which feature it is
         foreach($mmexConfig->featureList as $feature)
@@ -60,6 +54,6 @@ class Features extends BaseController
 
         echo view('features/_footer');   
 
-        echo view('templates/footer', $data);
+        $this->showFooter();
     }
 }

@@ -37,6 +37,27 @@ class BaseController extends Controller
      */
     protected $helpers = [];
 
+    protected function showHeader($title)
+    {
+        $data['title'] = $title;
+
+        $mmexConfig = config('MMEX');
+        $data['siteName'] = $mmexConfig->siteName;
+        $data['siteHeadline'] = $mmexConfig->siteHeadline;
+        $data['siteSummary'] = $mmexConfig->siteSummary;
+
+        echo view('templates/header', $data);
+        echo view('templates/navigation', $data);
+    }
+
+    protected function showFooter()
+    {
+        $mmexConfig = config('MMEX');
+        $data['siteCopyright'] = $mmexConfig->siteCopyright;
+
+        echo view('templates/footer', $data);
+    }
+
     /**
      * Constructor.
      */

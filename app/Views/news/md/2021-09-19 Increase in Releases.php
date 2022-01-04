@@ -1,6 +1,7 @@
 <?php
  return array(
     'title' => 'What\'s behind the increase in releases?',
+    'icon' => 'fas fa-file-code',
     'date' => '19th September 2021',
     'slug' => 'increase-in-releases',
     'image' => 'MMEX_Logo_Medium.png',
