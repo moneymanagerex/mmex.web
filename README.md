@@ -26,7 +26,7 @@ For further information see: https://codeigniter.com/user_guide/intro/requiremen
 
 1. Download the software into your project directory, this will setup CodeIgniter, Bootstrap, Font Awesome, and the theme.
 
-    > $ git clone --recursive https://github.com/whalley/mmex.web.git
+    > $ git clone --recursive https://github.com/moneymanagerex/mmex.web.git
 
 2. Ensure that the 'writeable' folder is writeable by the webserver, see: https://codeigniter.com/user_guide/installation/running.html#initial-configuration-set-up
 
