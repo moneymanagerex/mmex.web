@@ -38,9 +38,13 @@ For further information see: https://codeigniter.com/user_guide/intro/requiremen
 
 For further  information see: https://codeigniter.com/user_guide/installation/installing_manual.html
 
-5. Once setup and tested ensure that the .env file is setup for production - see: https://codeigniter.com/user_guide/general/environments.html. It should just need the  CI_ENVIRONMENT line commenting out
+5. Once setup and tested ensure that the .env file is setup for production - see: https://codeigniter.com/user_guide/general/environments.html. By default, no .env file is present. this is a safety feature to keep the site a bit more secure in case settings are messed up once it is live. Copy the env file to .env and open it up.
+
+This file is used to contain server-specific settings. This means you never will need to commit any sensitive information to your version control system. It includes some of the most common ones you want to enter already, though they are all commented out. So uncomment the line with CI_ENVIRONMENT on it, and change production to development:
 
     > #CI_ENVIRONMENT = development
+
+This will allow CodeIgnitor to report errors to you as you test your code. 
 
 ## Site Structure
 
