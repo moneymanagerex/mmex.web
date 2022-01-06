@@ -24,6 +24,7 @@ class About extends BaseController
 
     public function index()
     {
+        $this->donate();
     }
 
     public function contributors()
@@ -34,15 +35,15 @@ class About extends BaseController
         );
     }
 
-    public function privacy()
+    public function donate()
     { 
-        $this->displayMD('<i class="fas fa-user-shield"></i>&nbsp; Privacy Policy',
-                    "Please read the privacy policy applicable to this site",
-                    "privacy.md"
+        $this->displayMD('<i class="fas fa-donate"></i>&nbsp;Donate',
+                    "Money Manager EX is free and we are all volunteer developers. 
+                    Your donations keep the servers running and let us provide the best possible service.",
+                    "donate.md"
         );
     }
 
-    
     public function license()
     { 
         $this->displayMD('<i class="fas fa-id-badge"></i>&nbsp; License',
@@ -58,4 +59,13 @@ class About extends BaseController
                     "press.md"
         );
     }
+
+    public function privacy()
+    { 
+        $this->displayMD('<i class="fas fa-user-shield"></i>&nbsp; Privacy Policy',
+                    "Please read the privacy policy applicable to this site",
+                    "privacy.md"
+        );
+    }
+
 }

@@ -7,6 +7,7 @@ class Home extends BaseController
     public function index()
     {
         $this->showHeader("Home Page");
+        echo view('templates/toast');
 
         $mmexConfig = config('MMEX');
         $data['featureList'] = $mmexConfig->featureList;
