@@ -13,13 +13,13 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support</a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                        <li><a class="dropdown-item" href="/about/donate">Donate</a></li>
                         <li><a class="dropdown-item" href="https://github.moneymanagerex.org/moneymanagerex/docs/en/index.html">Documentation</a></li>
                         <li><a class="dropdown-item" href="https://forum.moneymanagerex.org/?utm_campaign=Website_MoneyManagerEX&utm_medium=Website_MoneyManagerEX&utm_source=Menu">Forum</a></li>
                         <li><a class="dropdown-item" href="http://slack.moneymanagerex.org/">Slack</a></li>
                         <li><a class="dropdown-item" href="https://github.com/moneymanagerex/moneymanagerex/wiki">Wiki</a></li>
                         <li><a class="dropdown-item" href="https://github.com/moneymanagerex/moneymanagerex/labels/bug">Report a Bug</a></li>
                         <li><a class="dropdown-item" href="https://github.com/moneymanagerex/moneymanagerex/labels/feature">Feature Request</a></li>
+                        <li><a class="dropdown-item" href="/about/donate">Donate</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -28,7 +28,7 @@
                         <li><a class="dropdown-item" href="https://github.com/moneymanagerex/moneymanagerex/releases">Changelog</a></li>
                         <li><a class="dropdown-item" href="https://github.com/moneymanagerex">Source Code</a></li>
                         <li><a class="dropdown-item" href="https://crowdin.com/project/moneymanagerex">Translations</a></li>
-                        <li><a class="dropdown-item" href="donate">Donate</a></li>
+                        <li><a class="dropdown-item" href="/about/donate">Donate</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
