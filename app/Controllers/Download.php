@@ -91,7 +91,7 @@ class Download extends BaseController
 
         echo view('downloads/index', $data);
 
-        $this->showHeader("Downloads");
+        $this->showFooter("Downloads");
     }
 
 }
