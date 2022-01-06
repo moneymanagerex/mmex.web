@@ -8,8 +8,6 @@
                         <a class="link-light small" href="/about/privacy">Privacy</a>
                         <span class="text-white mx-1">&middot;</span>
                         <a class="link-light small" href="/about/license">License</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="/">Contact</a>
                     </div>
                 </div>
             </div>
