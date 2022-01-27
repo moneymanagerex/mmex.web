@@ -23,4 +23,6 @@ Why not record a review or a screencast to explain a features?  Feel free to pub
 
 ### Make a monetary donation
 
-<p><a style="color: #444444;" href="https://www.paypal.com/donate/?token=7upvmc1K9o9kryBqQ7zXgulj3WyWJNUVgfFngb0c37SQQ_w6zcvnhKRNFfGmj24CNdd7SM29cEzaI9cn&locale.x=US" target="_blank" rel="noopener noreferrer"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal donation" /></a>(PayPal charges us a fee, sometimes pretty high)</p>
+<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=moneymanagerex%40gmail%2ecom&lc=US&item_name=MoneyManagerEx&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest" target="_blank" rel="noopener noreferrer"><img style="display: block; margin-left: auto; margin-right: auto;" src="/images/paypalDonate.png" alt="PayPal donation" /></a>(PayPal charges us a fee, sometimes pretty high)</p>
+
+
