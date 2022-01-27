@@ -8,8 +8,9 @@
                     <h1 class="display-5 fw-bolder text-white mb-2"><?php echo $siteHeadline; ?></h1>
                     <p class="lead fw-normal text-white-50 mb-4"><?php echo $siteSummary; ?></p>
                     <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="/download"><i class="fas fa-download"></i>&nbsp;Download</a>
+                        <a class="btn btn-primary btn-lg px-4" href="/download"><i class="fas fa-download"></i>&nbsp;Download</a>
                         <a class="btn btn-outline-light btn-lg px-4" href="https://github.moneymanagerex.org/moneymanagerex/docs/en/index.html"><i class="fas fa-book-open"></i>&nbsp;Documentation</a>
+                        <a class="btn btn-warning btn-lg px-4" href="/about/donate"><i class="fas fa-donate"></i>&nbsp;Donate</a>
                     </div>
                 </div>
             </div>
