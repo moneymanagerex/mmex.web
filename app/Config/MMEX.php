@@ -36,6 +36,16 @@ class MMEX extends BaseConfig
 
     // Empty build URLS imply that the Build controller can calculate these
     public $releaseList = [
+        [   'version' => "1.5.12",
+            'date' => "30th January 2022",
+            'contents' => [
+                'mac' => "",
+                'win32' => "",
+                'win64' => "",
+                'win32-port' => "",
+                'win64-port' => ""
+            ]
+        ],
         [   'version' => "1.5.11",
             'date' => "7th December 2021",
             'contents' => [
