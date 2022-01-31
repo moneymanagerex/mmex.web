@@ -43,7 +43,8 @@ class MMEX extends BaseConfig
                 'win32' => "",
                 'win64' => "",
                 'win32-port' => "",
-                'win64-port' => ""
+                'win64-port' => "",
+                'linux-bionic' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.12/mmex_1.5.12-1.bionic_amd64.deb"
             ]
         ],
         [   'version' => "1.5.11",
