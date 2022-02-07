@@ -31,12 +31,23 @@ class MMEX extends BaseConfig
         'linux-tessa' => "Linux Mint 19.1 (64-bit)",
         'linux-sylvia' => "Linux Mint 18.3 (64-bit)",
         'linux-fedora' => "Linux Fedora (32/64-bit)",
-        'linux-sus42' => "OpenSUSE 42 (32/64-bit)"
+        'linux-suse42' => "OpenSUSE 42 (32/64-bit)",
+        'linux-leap' => "OpenSUSE Leap 15.3 (32/64-bit)"
     ];
 
     // Empty build URLS imply that the Build controller can calculate these
     public $releaseList = [
-        [   'version' => "1.5.12",
+        [   'version' => "1.5.13",
+            'date' => "6th February 2022",
+            'contents' => [
+            'mac' => "",
+            'win32' => "",
+            'win64' => "",
+            'win32-port' => "",
+            'win64-port' => ""
+        ]
+    ],
+    [   'version' => "1.5.12",
             'date' => "30th January 2022",
             'contents' => [
                 'mac' => "",
@@ -44,7 +55,8 @@ class MMEX extends BaseConfig
                 'win64' => "",
                 'win32-port' => "",
                 'win64-port' => "",
-                'linux-bionic' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.12/mmex_1.5.12-1.bionic_amd64.deb"
+                'linux-bionic' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.12/mmex_1.5.12-1.bionic_amd64.deb",
+                'linux-leap' => "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.5.12/mmex-1.5.12-1-leap15.2.x86_64.rpm"
             ]
         ],
         [   'version' => "1.5.11",
