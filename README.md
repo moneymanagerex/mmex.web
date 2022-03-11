@@ -1,3 +1,6 @@
+
+** NOTE: This repo is not used for the MMEX HomeSite, it was considered but we adopted a static website rather than PHP **
+
 # MoneyManagerEx Home Site
 
 This is the README.md file for the MoneyManagerEx home site web page.
